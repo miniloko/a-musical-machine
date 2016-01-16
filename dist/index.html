@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="contain">
+		<h1 class="heading heading--page">A Musical Machine</h1>
+	</div>
+	<div class="contain contain--player">
+		<div class="player">
+			<a href="#" class="playButton"><span class="play play--paused"></span></a>
+			<div class="analyser canvas-placeholder" id="analyser"></div>
+		</div>
+	</div>
+	<div class="contain contain--controls">
+		<form class="controls" action="">
+			<h2 class="heading heading--sub">Sound controls</h2>
+			<div class="attack">
+				<p class="heading">Attack envelope</p>
+				<input class="radio" id="atk1" type="radio" name="attack" value="0.02" checked>
+				<label class="label" for="atk1">Sharp</label>
+				<input class="radio" id="atk2" type="radio" name="attack" value="0.2">
+				<label class="label" for="atk2">Dull</label>
+				<input class="radio" id="atk3" type="radio" name="attack" value="0.7">
+				<label class="label" for="atk3">Slow</label>
+				<input class="radio" id="atk4" type="radio" name="attack" value="2">
+				<label class="label" for="atk4">Suryp</label>
+			</div>
+			<div class="release">
+				<p class="heading">Release envelope</p>
+				<input class="radio" id="rel1" type="radio" name="release" value="0.01">
+				<label class="label" for="rel1">Instant</label>
+				<input class="radio" id="rel2" type="radio" name="release" value="0.5" checked>
+				<label class="label" for="rel2">Fast</label>
+				<input class="radio" id="rel3" type="radio" name="release" value="1">
+				<label class="label" for="rel3">Soft</label>
+				<input class="radio" id="rel4" type="radio" name="release" value="3">
+				<label class="label" for="rel4">Slow</label>
+			</div>
+
+		</form>
+	</div>
+	<div class="contain">
+		<br><br><small>Created by Joakim Lindén</small>
+	</div>
+	<script src="/polyfill.min.js"></script>
+	<script src="/app.js" type="text/javascript"></script>
+</body>
+</html>
